@@ -18,7 +18,9 @@
         "Patrick Steele-Idem <pnidem@gmail.com>"
     ],
     "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
-    "dependencies": {},
+    "dependencies": {
+        "dustc-commonjs": "0.1.0-beta"
+    },
     "devDependencies": {
         "mocha": "~1.15.1",
         "chai": "~1.8.1",
