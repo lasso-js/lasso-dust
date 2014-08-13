@@ -19,12 +19,12 @@
     ],
     "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
     "dependencies": {
-        "dustc-commonjs": "0.1.0-beta"
+        "dustc-commonjs": "0.1.0-beta",
+        "dustjs-linkedin": "^2.3.5"
     },
     "devDependencies": {
         "mocha": "~1.15.1",
-        "chai": "~1.8.1",
-        "dustjs-linkedin": "^2.3.5"
+        "chai": "~1.8.1"
     },
     "license": "Apache License v2.0",
     "bin": {},
