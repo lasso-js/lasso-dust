@@ -1,36 +1,36 @@
 {
-    "name": "raptor-optimizer-dust",
-    "description": "RaptorJS Optimizer plugin to support compilation of Dust templates",
-    "keywords": [
-        "raptor-optimizer",
-        "raptor-optimizer-plugin",
-        "raptor-templates"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/raptorjs3/raptor-optimizer-dust.git"
-    },
-    "scripts": {
-        "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test"
-    },
-    "author": "Patrick Steele-Idem <pnidem@gmail.com>",
-    "contributors": [
-        "Patrick Steele-Idem <pnidem@gmail.com>"
-    ],
-    "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
-    "dependencies": {
-        "dustc-commonjs": "0.1.0-beta",
-        "dustjs-linkedin": "^2.3.5"
-    },
-    "devDependencies": {
-        "mocha": "~1.15.1",
-        "chai": "~1.8.1"
-    },
-    "license": "Apache License v2.0",
-    "bin": {},
-    "main": "lib/raptor-optimizer-dust.js",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
-    },
-    "version": "0.1.5-beta"
+  "name": "raptor-optimizer-dust",
+  "description": "RaptorJS Optimizer plugin to support compilation of Dust templates",
+  "keywords": [
+    "raptor-optimizer",
+    "raptor-optimizer-plugin",
+    "raptor-templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raptorjs3/raptor-optimizer-dust.git"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test"
+  },
+  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
+  "contributors": [
+    "Patrick Steele-Idem <pnidem@gmail.com>"
+  ],
+  "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
+  "dependencies": {
+    "dustc-commonjs": "0.1.0-beta",
+    "dustjs-linkedin": "^2.3.5"
+  },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "chai": "~1.8.1"
+  },
+  "license": "Apache License v2.0",
+  "bin": {},
+  "main": "lib/raptor-optimizer-dust.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "version": "1.0.0-beta"
 }
