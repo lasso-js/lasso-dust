@@ -28,7 +28,7 @@
   },
   "license": "Apache License v2.0",
   "bin": {},
-  "main": "lib/raptor-optimizer-dust.js",
+  "main": "lib/raptor-optimizer-dust-plugin.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
