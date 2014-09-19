@@ -6,13 +6,13 @@ var nodePath = require('path');
 var fs = require('fs');
 
 var dustPlugin = require('../'); // Load this module just to make sure it works
-var raptorOptimizer = require('raptor-optimizer');
+var optimizer = require('optimizer');
 
 describe('optimizer-dust' , function() {
 
 
     it('should compile a simple Dust template', function(done) {
-        var pageOptimizer = raptorOptimizer.create({
+        var pageOptimizer = optimizer.create({
                 fileWriter: {
                     fingerprintsEnabled: false,
                     outputDir: nodePath.join(__dirname, 'static')
@@ -20,7 +20,7 @@ describe('optimizer-dust' , function() {
                 bundlingEnabled: true,
                 plugins: [
                     {
-                        plugin: 'raptor-optimizer-require',
+                        plugin: 'optimizer-require',
                         config: {
                             includeClient: false
                         }
