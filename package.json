@@ -19,7 +19,7 @@
     ],
     "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
     "dependencies": {
-        "dustc-commonjs": "0.1.0",
+        "dustc-commonjs": "1.0.0",
         "dustjs-linkedin": "^2.3.5"
     },
     "devDependencies": {
