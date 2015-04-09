@@ -40,7 +40,7 @@ describe('lasso-dust' , function() {
                     nodePath.join(__dirname, 'fixtures/simple.dust')
                 ]
             },
-            function(err, optimizedPage) {
+            function(err, lassoPageResult) {
                 if (err) {
                     return done(err);
                 }
