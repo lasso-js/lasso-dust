@@ -1,7 +1,7 @@
 lasso-dust
 ===============
 
-Plugin for the [RaptorJS Optimizer](https://github.com/raptorjs/lasso) to support compilation and transport of [Dust](https://github.com/raptorjs/dust) template files. Templates are compiled using the [dustc-commonjs](https://github.com/patrick-steele-idem/dustc-commonjs) compiler that produces a CommonJS module as output.
+Plugin for the [Lasso.js](https://github.com/raptorjs/lasso) to support compilation and transport of [Dust](https://github.com/raptorjs/dust) template files. Templates are compiled using the [dustc-commonjs](https://github.com/patrick-steele-idem/dustc-commonjs) compiler that produces a CommonJS module as output.
 
 # Usage
 
