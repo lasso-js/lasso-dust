@@ -41,7 +41,7 @@ template.render({
     });
 ```
 
-To explicitly declare templates that may not be discovered via static code analysis of CommonJS modules, you can also choose to declare a Dust template dependency in an `optimizer.json` file.
+To explicitly declare templates that may not be discovered via static code analysis of CommonJS modules, you can also choose to declare a Dust template dependency in an `browser.json` file.
 
 ```json
 {
