@@ -6,13 +6,13 @@ var nodePath = require('path');
 var fs = require('fs');
 
 var dustPlugin = require('../'); // Load this module just to make sure it works
-var optimizer = require('optimizer');
+var lasso = require('lasso');
 
-describe('optimizer-dust' , function() {
+describe('lasso-dust' , function() {
 
 
     it('should compile a simple Dust template', function(done) {
-        var pageOptimizer = optimizer.create({
+        var pageOptimizer = lasso.create({
                 fileWriter: {
                     fingerprintsEnabled: false,
                     outputDir: nodePath.join(__dirname, 'static')
@@ -20,7 +20,7 @@ describe('optimizer-dust' , function() {
                 bundlingEnabled: true,
                 plugins: [
                     {
-                        plugin: 'optimizer-require',
+                        plugin: 'lasso-require',
                         config: {
                             includeClient: false
                         }

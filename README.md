@@ -1,23 +1,23 @@
-optimizer-dust
+lasso-dust
 ===============
 
-Plugin for the [RaptorJS Optimizer](https://github.com/raptorjs/optimizer) to support compilation and transport of [Dust](https://github.com/raptorjs/dust) template files. Templates are compiled using the [dustc-commonjs](https://github.com/patrick-steele-idem/dustc-commonjs) compiler that produces a CommonJS module as output.
+Plugin for the [RaptorJS Optimizer](https://github.com/raptorjs/lasso) to support compilation and transport of [Dust](https://github.com/raptorjs/dust) template files. Templates are compiled using the [dustc-commonjs](https://github.com/patrick-steele-idem/dustc-commonjs) compiler that produces a CommonJS module as output.
 
 # Usage
 
 ```bash
-npm install optimizer-dust --save
+npm install lasso-dust --save
 npm install view-engine --save
 npm install view-engine-dust --save
 ```
 
-Register the plugin when configuring the optimizer. For example:
+Register the plugin when configuring the lasso. For example:
 
 ```js
-require('optimizer').configure({
+require('lasso').configure({
     "plugins": [
         ...
-        "optimizer-dust"
+        "lasso-dust"
     ]
     ...
 });
