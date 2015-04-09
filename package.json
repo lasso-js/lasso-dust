@@ -1,6 +1,6 @@
 {
     "name": "lasso-dust",
-    "description": "RaptorJS Optimizer plugin to support compilation of Dust templates",
+    "description": "Lasso.js plugin to support compilation of Dust templates",
     "keywords": [
         "lasso",
         "lasso-plugin",
