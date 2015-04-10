@@ -34,7 +34,7 @@ describe('lasso-dust' , function() {
                 ]
             });
 
-        myLasso.optimizePage({
+        myLasso.lassoPage({
                 name: 'testPage',
                 dependencies: [
                     nodePath.join(__dirname, 'fixtures/simple.dust')
