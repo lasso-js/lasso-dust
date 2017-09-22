@@ -10,8 +10,7 @@ var lasso = require('lasso');
 
 describe('lasso-dust' , function() {
 
-
-    it('should compile a simple Dust template', function(done) {
+    it('should compile a simple Dust template', function() {
         var myLasso = lasso.create({
                 fileWriter: {
                     fingerprintsEnabled: false,
@@ -34,22 +33,15 @@ describe('lasso-dust' , function() {
                 ]
             });
 
-        myLasso.lassoPage({
+        return myLasso.lassoPage({
                 name: 'testPage',
                 dependencies: [
                     nodePath.join(__dirname, 'fixtures/simple.dust')
                 ]
-            },
-            function(err, lassoPageResult) {
-                if (err) {
-                    return done(err);
-                }
-
+            }).then((lassoPageResult) => {
                 var output = fs.readFileSync(nodePath.join(__dirname, 'static/testPage.js'), {encoding: 'utf8'});
                 expect(output).to.contain('module.exports');
-                expect(output).to.contain('"/test/fixtures/simple.dust"');
-                done();
+                expect(output).to.contain('/test/fixtures/simple.dust');
             });
     });
-
 });

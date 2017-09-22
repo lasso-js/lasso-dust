@@ -1,2 +1,2 @@
-$rmod.def("/test/fixtures/simple.dust", function(require, exports, module, __filename, __dirname) { (function(){module.exports=body_0;function body_0(chk,ctx){return chk.write("Hello ").reference(ctx.get(["name"], false),ctx,"h");}return body_0;})();
+$_mod.def("/lasso-dust$1.1.5/test/fixtures/simple.dust", function(require, exports, module, __filename, __dirname) { (function(dust){module.exports=body_0;function body_0(chk,ctx){return chk.w("Hello ").f(ctx.get(["name"], false),ctx,"h");}body_0.__dustBody=!0;return body_0}(dust));
 });
