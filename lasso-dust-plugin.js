@@ -10,15 +10,21 @@ module.exports = function(lasso, config) {
 
             init: function(lassoContext, callback) {
                 if (!this.path) {
-                    return callback(new Error('"path" is required for a Dust dependency'));
+                    const missingPathErr = new Error('"path" is required for a Dust dependency');
+
+                    if (callback) {
+                        return callback(missingPathErr);
+                    } else {
+                        throw missingPathErr;
+                    }
                 }
 
                 this.path = this.resolvePath(this.path);
-                callback();
+                if (callback) callback();
             },
 
             read: function(lassoContext, callback) {
-                compiler.compileFile(this.path, callback);
+                return compiler.compileFile(this.path, callback);
             },
 
             getSourceFile: function() {
@@ -26,7 +32,7 @@ module.exports = function(lasso, config) {
             },
 
             getLastModified: function(lassoContext, callback) {
-                lassoContext.getFileLastModified(this.path, callback);
+                return lassoContext.getFileLastModified(this.path, callback);
             }
         });
 };
