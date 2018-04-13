@@ -17,13 +17,10 @@ describe('lasso-dust' , function() {
                     outputDir: nodePath.join(__dirname, 'static')
                 },
                 bundlingEnabled: true,
+                require: {
+                    includeClient: false
+                },
                 plugins: [
-                    {
-                        plugin: 'lasso-require',
-                        config: {
-                            includeClient: false
-                        }
-                    },
                     {
                         plugin: dustPlugin,
                         config: {
